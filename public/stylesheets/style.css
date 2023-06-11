@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background-position: bottom;
+  background-image: url(https://images.unsplash.com/photo-1588874233223-a537a7db99ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80);
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+::placeholder {
+  font-size: 12px;
+}
+
+.card {
+  padding: 32px 24px;
+  border: 1px solid rgb(235, 233, 233);
+  background: linear-gradient(
+    111.29deg,
+    rgba(255, 255, 255, 0.53) -1.83%,
+    rgba(255, 255, 255, 0) 109.95%
+  );
+  box-shadow: 50px 60px 100px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(40px);
+  border-radius: 40px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+.card-text {
+  font-size: 60px;
+  font-weight: bold;
+  color: #ff512f;
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+.card-input {
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-right: 8px;
+  border: none;
+}
+.card-btn {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+  padding: 8px 16px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card-btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
